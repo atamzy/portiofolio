@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Atamzy Launch</title>
+ <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Atamzy</div>
+    <nav id="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#features" id="features-link">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span>Atamzy</span>Tech Brand</h1>
+      <p>Gather Your ideas and watch us make them stunning with speed and style.</p>
+      <button onclick="scrollToSection('contact')">Get Started</button>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2> Know more about the Brand!</h2>
+
+    <div class="about-1">
+       <p> ATAMZY OFFICIAL TECH BRAND IS A TECH AND DESIGN BRAND DEDICATED TO BUILDING SCALABLE,<br>
+        USER-FRIENDLY, AND VISUALLY CAPTIVATING WEB AND DESIGN SOLUTIONS.  WE BRIDGE <br> FUNCTIONALITY  WITH 
+       AESTHETICS TO DELIVER DIGITAL PRODUCTS THAT DON'T JUST WORK- BUT WOW</p>
+       
+       <button onclick="scrollToSection('contact')">Message us</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose Us?</h2>
+
+    <h4>We See to</h4>
+    <div class="feature-cards">
+      <div class="card">⚡ Fast Performance</div>
+      <div class="card">📱 Responsive Websites</div>
+      <div class="card">🎨 Beautiful Design</div>
+    </div>
+  </section>
+
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("attamachibuikem@gmail.com"); // your EmailJS user ID
+  })();
+</script>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/attamachibuikem@gmail.com" method="POST">
+      <!-- Avoid spam -->
+      <input type="hidden" name="_captcha" value="false" />
+  
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Atamzy Official Launch. All rights reserved.</p>
+  </footer>
+</body>
+</html>
